@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html x-ng-app="kittiesApp">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-init="kitties=[
+		{
+			catName: 'Karl',
+			monthsOld: 5,
+			gender: 'boy',
+			image: 'images/carl.png',
+			adopted: false
+		},
+		{
+			catName: 'Jack',
+			monthsOld: 4,
+			gender: 'boy',
+			image: 'images/jack.png',
+			adopted: false
+		},
+		{
+			catName: 'Oscar',
+			monthsOld: 2,
+			gender: 'boy',
+			image: 'images/oscar.png',
+			adopted: false
+		},
+		{
+			catName: 'Princess Mew',
+			monthsOld: 3,
+			gender: 'girl',
+			image: 'images/princessmew.png',
+			adopted: false
+		}
+	]">
+    <div class="left-container">
+      <h1>Kitties for Adoption</h1>
+      <!-- Show Kitties for Adoption -->
+      <div class="kitties">
+	<h2>My name is {{k.catName}}</h2>
+	<p>I am {{k.monthsOld}} months old.</p>
+	<p>I'm a {{k.gender}}.</p>
+	<img x-ng-src={{k.image}}>
+	<p>Adopt? <input type="checkbox" "></p>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <h1>At their forever homes! <3</h1>
+				     <div class="kitties">
+				       <h2>My name is </h2>
+				       <p>I am months old.</p>
+				       <p>I'm a.</p>
+				       <img x-ng-src="">
+				       <p>Adopt? <input type="checkbox"></p>
+				     </div>
+    </div>
+
+  </body>
+</html>
